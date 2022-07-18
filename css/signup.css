@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    font-family: 'Inter', sans-serif
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+header,
+footer {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.text h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.text p{
+    font-size: 20px !important;
+    font-weight: 400;
+}
+
+.nav-link.active {
+    color: black !important;
+    border-bottom: none !important;
+}
+
+.main-section{
+    width: 60%;
+}
+.success{
+    margin: 40px auto !important;
+}
+
+.line{
+    background: url(../img/Line\ 27.png);
+    width: 30%;
+    height: 2px;
+}
+
+.box img{
+    width: 90%;
+}
+
+.continue{
+    width: 100%;
+}
+
+.continue .line{
+    width: 40%;
+}
+
+.continue p{
+    width: 100%;
+    font-weight: 500;
+}
+
+.login p{
+    font-weight: 500;
+}
+
+form i{
+    margin-left: -30px;
+}
+
+.social img{
+    width: 150px;
+    align-content: center;
+}
+
+.dc{
+    background: rgb(23, 162, 0, 0.5);
+}
+
+.c{
+    color: #ffffff;
+    background-color: #17A100;
+}
+
+.req{
+    font-weight: 400;
+}
+
+label{
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 19px;
+    font-style: normal;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.login a{
+    text-decoration: none;
+    color: #17A100;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media(max-width: 1441px) {
+    .main-section, .success {
+        width: 75%;
+    }
+
+    .linegroup p {
+        font-size: 12px !important;
+    }
+
+    .continue p {
+        font-size: 16px;
+    }
+    .success {
+        margin: 15% auto;
+    }
+    label {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        font-style: normal;
+    }
+}
+
+@media(max-width: 1025px){
+    .main-section, .success{
+        width: 75%;
+    }
+    .linegroup p {
+        font: 16px;
+    }
+    .success {
+        margin: 20% auto;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .login a {
+        text-decoration: none;
+        color: #17A100;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media(max-width: 769px) {
+    .main-section, .success {
+        width: 85%;
+    }
+    
+    .linegroup p{
+        font-size: 12px !important;
+    }
+    .continue p{
+        font-size: 16px;
+    }
+    .success {
+        margin: 15% auto;
+    }
+    .nav-link {
+        color: black !important;
+    }
+
+    .nav-link.active {
+        border-bottom: none !important;
+    }
+
+    #sign-up {
+        background-color: transparent !important;
+    }
+
+    .width-md {
+        width: 100% !important;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .login a {
+        text-decoration: none;
+        color: #17A100;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .socials {
+        width: 30% !important;
+    }
+}
+
+@media(max-width: 426px) {
+    .main-section, .success{
+        width: 100%;
+    }
+
+    .text h1{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .text p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        font-style: normal;
+    }
+
+    .success{
+        margin: 30% auto;
+    }
+
+    .c{
+        width: 100%!important;
+    } 
+
+    #width {
+        width: 100% !important;
+    }
+    
+    .input-group .form-control,
+    .input-group #button-addon2 {
+        border-radius: 7px !important;
+    }
+
+    .btn a {
+            text-decoration: none;
+            color: white;
+    }
+    
+    .login a {
+        text-decoration: none;
+        color: #17A100;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .socials{
+        width: 40% !important;
+    }
+}
+
+@media(max-width: 321px){
+    .socials {
+        width: 49% !important;
+    }
+}
+
+@media(max-width: 321px){
+.text h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    font-style: normal;
+}
+.socials {
+    width: 49% !important;
+}
+.continue p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header-footer-new.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7f0bd436b.js" crossorigin="anonymous"></script>
+
+    <!-- boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand text-dark" style="font-weight: 600; font-size: 30px;" href="#">Dispoze</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-4">
+                    <a class="text-decoration-none text-dark d-lg-none" style="font-weight: 400; font-size: 18px;" href="#">MENU</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link link-dark text-dark" style="font-weight: 400; font-size: 18px;" aria-current="page" href="index.html"><img src="img/home.png" alt="icon" class="me-4 d-lg-none">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link link-dark text-dark" style="font-weight: 400; font-size: 18px;" href="login.html"><img src="img/shop.png" alt="icon" class="me-4 d-lg-none">Shop</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link link-dark text-dark" style="font-weight: 400; font-size: 18px;" href="about-us.html"> <img src="img/people.png" alt="icon" class="me-4 d-lg-none">About Us</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link link-dark text-dark" style="font-weight: 400; font-size: 18px;" href="#footer"><img src="img/messages-3.png" alt="icon" class="me-4 d-lg-none">Contact Us</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link me-lg-3" style="font-weight: 400; font-size: 18px; color:  #17A200;" href="login.html"><img src="img/login.png" alt="icon" class="me-4 d-lg-none">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white rounded px-lg-3 py-1" id="sign-up" style="font-weight: 400; font-size: 18px; background-color:  #17A200;" href="signup.html"><img src="img/user-add.png" alt="icon" class="me-4 d-lg-none">Signup</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-area text-center">
+                        <h1 class="fw-bold mb-3">Welcome Back!</h1>
+                        <p>Enter your details to login.</p>
+                    </div>
+                    <div class="login-form mx-auto">
+                        <form action="" class="">
+                            <div class="mb-5">
+                                <label for="exampleInputEmail1" class="form-label ms-2">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control p-3 border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@domain.com" required onkeyup="isFilled()">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                            </div>
+                            <div class="mb-2">
+                                <label for="exampleInputPassword1" class="form-label ms-2">Password<span class="text-danger">*</span></label>
+
+
+                                <div class="position-relative">
+                                    <input type="password" class="form-control p-3 border border-dark" id="exampleInputPassword1" placeholder="Enter your password" required onkeyup="isFilled()">
+                                    <i class="bi bi-eye-slash fs-4 position-absolute view" id="togglePassword"></i>
+                                    
+                                </div>
+                                
+                                <!-- <button type="button"  class="btn position-absolute view text-muted border-0"><i class="bi bi-eye-slash fs-4" id="togglePassword"></i></button>  -->
+
+                            </div>
+                            <div class="mb-3 form-check d-flex justify-content-between">
+                                <div class="">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                                <div class="">
+                                    <a href="forgot-password.html" class="text-danger text-decoration-none">forgot password?</a>
+                                    <p ></p>
+                                </div>
+                            </div>
+
+
+                            <div class="btn-sectionIII mt-3 mb-5">
+                                <div class="d-grid mx-auto">
+                                    <a href="registered-user-homepage.html" class="btn text-light text-white text-decoration-none p-2" id="close" type="submit" disabled="disabled">Login</a>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div class="account text-center">
+                        <p>Don’t have an account? <a href="#" class="text-decoration-none" style="color: #17A200;">Sign Up</a></p>
+                    </div>
+
+                    <div class="line-box">
+                        <hr class="line">
+                        <div class="text">
+                            <p class="" style="font-size: 14px;">Or Continue With</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="d-flex justify-content-center align-items-center mb-5">
+                        <img src="img/Line 26.png" alt="" class="img-fluid" style="height: 1px;">
+                        <p class="mx-5" style="height: 5px;">Or continue with</p>
+                        <img src="img/Line 26.png" alt="" class="img-fluid" style="height: 1px;">
+                    </div> -->
+                    <!-- <div class="d-flex justify-content-center mb-4">
+                        <img src="img/Google - jpeg 0.png" alt="" class="img-fluid">
+                        <img src="img/Facebook - jpeg 0.png" alt="" class="img-fluid mx-4">
+                        <img src="img/Apple - png 0.png" alt="" class="img-fluid">
+                    </div> -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <!-- <div class="border border-dark d-inline" > -->
+                            <!-- <img src="img/google_app_icon.png" alt="" class="img-fluid" style="width: 4%;"> -->
+                            <img src="img/Google - jpeg 0.png" alt="" class="img-fluid">
+                        <!-- </div> -->
+                        <div>
+                            <i class="bi bi-facebook border-0 text-primary display-5 mx-4"></i>
+                        </div>
+                        <div>
+                            <i class="bi bi-apple  border border-dark rounded-circle fs-3" style="padding: 8px 11px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header-footer-new.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+header, footer {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.nav-link.active {
+    color: #17A200 !important;
+    border-bottom: 5px solid #17A200 !important;
+}
+
+#not-btn:hover, #not-btn:focus {
+    border: 1px solid transparent !important;
+}
+
+.dropdown-item:hover {
+    background: transparent !important;
+}
+
+footer {
+    background: url(../img/background_3.jpg) center/cover no-repeat;
+}
+
+#not-btn {
+    position: relative;
+}
+
+.notification-counter {
+    width: 23%;
+    min-height: 1.5vh;
+    border-radius: 50%;
+    background: red;
+    color: #ffff;
+    font-size: 10px;
+    position: absolute;
+    top: 0px;
+    right: 16px;
+}
+
+@media (max-width: 1025px) {
+    .notification-counter {
+        width: 20%;
+        min-height: 3vh;
+    }
+    
+}
+
+@media (max-width: 769px) {
+    .nav-link {
+        color: black;
+    }
+
+    .nav-link.active {
+        border-bottom: none !important;
+    }
+
+    .width-md {
+        width: 100% !important;
+    }
+
+    .notification-counter {
+        width: 8%;
+        top: 5px;
+        left: 12px;
+    }
+}
+
+@media (max-width: 426px) {
+    #width {
+        width: 100% !important;
+    }
+
+    .input-group .form-control, .input-group button{
+        border-radius: 7px!important;
+    }
+}
+
+

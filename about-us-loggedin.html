@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/about-us-loggedin.css" />
+    <link rel="stylesheet" href="css/header-footer-loggedin.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" style="font-weight: 600; font-size: 30px;" href="#">Dispoze</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item me-4">
+                  <a class="text-decoration-none text-dark d-lg-none" style="font-weight: 400; font-size: 18px;" href="#">MENU</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link link-dark active" style="font-weight: 400; font-size: 18px;" aria-current="page" href="registered-user-homepage.html"><img src="img/home.png" alt="icon" class="me-4 d-lg-none">Home</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="shop.html"><img src="img/shop.png" alt="icon" class="me-4 d-lg-none">Shop</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="about-us-loggedin.html"> <img src="img/people.png" alt="icon" class="me-4 d-lg-none">About Us</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="#footer"><img src="img/messages-3.png" alt="icon" class="me-4 d-lg-none">Contact Us</a>
+                </li>     
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mt-1">
+                      <button type="button" class="btn btn-outline-white px-0 px-lg-3 py-0" id="not-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <img src="img/blanknotification.png" alt="logo"><span class="d-lg-none ps-1 ms-3" style="font-weight: 400; font-size: 18px;">Notifications</span>
+                          <div class="notification-counter">3</div>
+                      </button>
+                  </li>
+                  <li class="nav-item dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/profile-circle.png" alt="icon">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px;" href="profile.html"><img src="img/profile-circle.png" alt="icon" class="me-3">Profile</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px; color :#FA0000;" href="login.html"><img src="img/logout.png" alt="icon" class="me-3">Sign-Out</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mb-1 d-lg-none">
+                      <a class="nav-link link-dark" href="profile.html"><img src="img/profile-circle.png" alt="icon"><span class="d-lg-none ps-4" style="font-weight: 400; font-size: 18px;">Profile</span></a>
+                  </li>
+                  <li class="nav-item mb-1 d-lg-none">
+                      <a class="nav-link" href="login.html" style="font-weight: 400; font-size: 18px; color :#FA0000;"><img src="img/logout.png" alt="icon" class="pe-4">Sign-Out</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </header>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content px-4">
+          <div class="modal-header flex-column">
+              <button type="button" class="btn-close align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="staticBackdropLabel" style="font-weight: 600; font-size: 25px;">Notifications<span class="unread-notification">(3)</span></h5>
+          </div>
+          <div class="modal-body mt-3">
+            <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background: rgba(255, 238, 238, 0.99); color: rgba(199, 0, 0, 0.99);">
+              <div class="me-5"><i class="bi bi-info-circle"></i></div>
+              <div class="me-5">
+                  <h6>Notice of unavailability.</h6>
+                  <p>Hello, kindly be informed that our pick up service will be unavailable from Monday, 15th of May to Friday, 4th of June, 2022. This is due to the movement restrictions put in place by the federal government to curtail the spread of the COVID-19 pandemic. We will be back to serve you better as soon as the restriction is suspended. Stay safe!😷</p>
+              </div>
+              <div><i class="bi bi-x"></i></div>
+            </div>
+            <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #EBFFE8; color: #17A200;">
+              <div class="me-5"><i class="bi bi-info-circle"></i></div>
+              <div class="me-5">
+                  <h6>Happy New Year!</h6>
+                  <p>Happy New Year from us at Dispoze! We wish you all the good things this year has to offer.🎉🎈</p>
+              </div>
+              <div><i class="bi bi-x"></i></div>
+            </div>
+            <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #FFF4E3; color: #A16C21;">
+              <div class="me-5"><i class="bi bi-info-circle"></i></div>
+              <div class="me-5">
+                  <h6>New items available to shop</h6>
+                  <p>Hello, we have new collections of waste disposal materials you’d definitely love. kindly check the “Shop” section to cop yours!</p>
+              </div>
+              <div><i class="bi bi-x"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <main>
+      <section class="about-story py-5">
+        <div class="container">
+          <div class="about-header text-center mb-5">
+            <h3>Our Story</h3>
+          </div>
+          <div class="about-details">
+            <p class="pe-5 fs-5 mx-auto w-75">
+              Dizpose is a registered company in Nigeria established in 2010 to
+              provide solutions to the waste management challenges facing
+              Nigerians.<br />
+              From a fleet of 5 modern waste disposal trucks and 20 staffs in
+              2010, dizpose now has 40 modern waste disposal trucks and ejector
+              trailers and 200 staffs across Nigeria to collaborate with
+              government across all levels in providing prompt and efficient
+              waste management services.
+            </p>
+          </div>
+          <div class="about-header text-center mt-5">
+            <h3>Who we are</h3>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="first-member mt-3">
+              <div class="img-container">
+                <img src="img/Ellipse 1.png" alt=" a man" class="img-fluid" />
+              </div>
+              <div class="details ps-3 pt-2">
+                <h5 class="ps-3">Eric</h5>
+                <span class="text-muted small-text">CEO, co-founder</span>
+              </div>
+            </div>
+            <div class="second-member mt-3">
+              <div class="img-container">
+                <img src="img/Ellipse 2.png" alt=" a man" class="img-fluid" />
+              </div>
+              <div class="details ps-3 pt-2">
+                <h5 class="">Janet</h5>
+                <span class="text-muted small-text">Director</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-header text-center mt-5">
+            <h3>Our Services</h3>
+          </div>
+          <div class="list-0f-services pt-3 pe-4">
+            <ul>
+              <li>
+                Collection and safe disposal of household, commercial and
+                industrial waste.
+              </li>
+              <li>Litter management services</li>
+              <li>Landfill management</li>
+              <li>Recycling</li>
+              <li>Sales of waste bags, containers and dumpsters</li>
+              <li>
+                Sales, hiring and leasing of modern waste management trucks.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container py-5">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 mb-4 mb-lg-0"> 
+              <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Stay Connected</h6>
+              <p id="width" class="w-75 mb-4 width-md" style="font-weight: 400; font-size: 16px;">Subscribe to our newsletter to join over 1,500 persons who receive updates about our offers and changes in policy. You can unsubscribe anytime!</p>
+              <div class="input-group flex-column flex-md-row flex-lg-row w-75" id="width">
+                  <input type="email" class="form-control mb-3 mb-md-0 mb-lg-0" placeholder="example@domain.com" aria-label="Recipient's email" aria-describedby="button-addon2" id="width">
+                  <button class="btn py-0" style="font-weight: 400; font-size: 24px; background-color:  #17A200; color: #fff;" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 ps-lg-5">
+              <div class="row">
+                  <div class="col-12 col-md-6 ps-lg-5 pe-md-5">
+                      <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Quick Links</h6>
+                      <ul class="list-unstyled ps-1">
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="registered-user-homepage.html">Home</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Services</a>
+                          </li>
+                          <li class="mb-3"> 
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Recent Projects</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Request Pick Up</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-12 col-md-6 ps-lg-5 ps-md-5">
+                      <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Contact Us</h6>
+                      <ul class="list-unstyled">
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/instagram 1.png" alt="logo" class="me-2">Instagram</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/twitter 1.png" alt="logo" class="me-2"> Twitter</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/linkedin 1.png" alt="logo" class="me-2"> LinkedIn</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/facebook 1.png" alt="logo" class="me-2"> Facebook</a>
+                          </li>
+                          <li class="mb-3">
+                              <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="mailto:somebody@domain.com"><img src="img/mail 1.png" alt="logo" class="me-2"> Email</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

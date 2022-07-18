@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/registered-user-homepage.css">
+    <link rel="stylesheet" href="css/header-footer-loggedin.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afc0882490.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+<!-- header for registered users -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" style="font-weight: 600; font-size: 30px;" href="#">Dispoze</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="text-decoration-none text-dark d-lg-none" style="font-weight: 400; font-size: 18px;" href="#">MENU</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link link-dark active" style="font-weight: 400; font-size: 18px;" aria-current="page" href="registered-user-homepage.html"><img src="img/home.png" alt="icon" class="me-4 d-lg-none">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="shop.html"><img src="img/shop.png" alt="icon" class="me-4 d-lg-none">Shop</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="about-us-loggedin.html"> <img src="img/people.png" alt="icon" class="me-4 d-lg-none">About Us</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="#footer"><img src="img/messages-3.png" alt="icon" class="me-4 d-lg-none">Contact Us</a>
+            </li>     
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mt-1">
+                  <button type="button" class="btn btn-outline-white px-0 px-lg-3 py-0" id="not-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <img src="img/blanknotification.png" alt="logo"><span class="d-lg-none ps-1 ms-3" style="font-weight: 400; font-size: 18px;">Notifications</span>
+                      <div class="notification-counter">3</div>
+                  </button>
+              </li>
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/profile-circle.png" alt="icon">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px;" href="profile.html"><img src="img/profile-circle.png" alt="icon" class="me-3">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px; color :#FA0000;" href="login.html"><img src="img/logout.png" alt="icon" class="me-3">Sign-Out</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-1 d-lg-none">
+                  <a class="nav-link link-dark" href="profile.html"><img src="img/profile-circle.png" alt="icon"><span class="d-lg-none ps-4" style="font-weight: 400; font-size: 18px;">Profile</span></a>
+              </li>
+              <li class="nav-item mb-1 d-lg-none">
+                  <a class="nav-link" href="login.html" style="font-weight: 400; font-size: 18px; color :#FA0000;"><img src="img/logout.png" alt="icon" class="pe-4">Sign-Out</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+</header>
+
+<!-- modal notification -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content px-4">
+      <div class="modal-header flex-column">
+          <button type="button" class="btn-close align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="staticBackdropLabel" style="font-weight: 600; font-size: 25px;">Notifications<span class="unread-notification">(3)</span></h5>
+      </div>
+      <div class="modal-body mt-3">
+        <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background: rgba(255, 238, 238, 0.99); color: rgba(199, 0, 0, 0.99);">
+          <div class="me-5"><i class="bi bi-info-circle"></i></div>
+          <div class="me-5">
+              <h6>Notice of unavailability.</h6>
+              <p>Hello, kindly be informed that our pick up service will be unavailable from Monday, 15th of May to Friday, 4th of June, 2022. This is due to the movement restrictions put in place by the federal government to curtail the spread of the COVID-19 pandemic. We will be back to serve you better as soon as the restriction is suspended. Stay safe!😷</p>
+          </div>
+          <div><i class="bi bi-x"></i></div>
+        </div>
+        <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #EBFFE8; color: #17A200;">
+          <div class="me-5"><i class="bi bi-info-circle"></i></div>
+          <div class="me-5">
+              <h6>Happy New Year!</h6>
+              <p>Happy New Year from us at Dispoze! We wish you all the good things this year has to offer.🎉🎈</p>
+          </div>
+          <div><i class="bi bi-x"></i></div>
+        </div>
+        <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #FFF4E3; color: #A16C21;">
+          <div class="me-5"><i class="bi bi-info-circle"></i></div>
+          <div class="me-5">
+              <h6>New items available to shop</h6>
+              <p>Hello, we have new collections of waste disposal materials you’d definitely love. kindly check the “Shop” section to cop yours!</p>
+          </div>
+          <div><i class="bi bi-x"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="section1-homepage mb-4">
+    <div class="container">
+      <div class="row imate flex-column-reverse flex-lg-row">
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="hero-title">
+          <h1>The Most Reliable & Efficient <span class="green-title">Waste Disposal Service.</span></h1></div>
+          <div class="hero-content mt-2">
+            <p class="mb-4">You can always count on us to have your waste disposed off properly and at a time convenient for you. We put you first!</p>
+          </div>
+          <div class="btn-pickup-request my-3">
+            <a href="schedule-pickup.html" class="text-white">Request Pickup</a>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-12 josh">
+          <img src="./img/image 2.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section2-homepage py-2">
+    <div class="container text-center">
+      <div class="service-title">
+        <h4>What we are offering.....</h4>
+        <h1>The services we are providing</h1>
+      </div>
+          <div class="swiper mySwiperTop mb-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="card border-0">
+                <img src="./img/handy-trash-can 1.png" class="img-fluid w-40 mx-auto my-4" alt="">
+                <div class="card-content-trash">
+                  <h5>Zero Waste</h5>
+                  <p class=" fs-6 w-80">We make sure your environment is waste free</p>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                <img src="./img/atomic-trash-can 1.png" class="img-fluid w-40 mx-auto my-4" alt="">
+                <div class="card-content-trash">
+                  <h5>Dumpster Rental</h5>
+                  <p class=" fs-6 w-80">We rent out dumpsters at an affordable price</p>
+                </div>
+              </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="card border-0">
+                <img src="./img/ginger-cat-94 1.png" class="img-fluid w-40 mx-auto my-4" alt="">
+                <div class="card-content-trash">
+                  <h5>Portable Toliet</h5>
+                  <p class=" fs-6 w-80">We rent out portable toliets for both puble and private use</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="./img/3d-fluency-recycling-earth 1.png" class="img-fluid w-40 mx-auto my-4" alt="">
+                <div class="card-content-trash">
+                  <h5>Recycling Service</h5>
+                  <p class=" fs-6 w-80">We recycle your waste to reuseable products</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section3-homepage">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-6 col-md-12 col-12 our-job">
+          <div class="our-staff">
+          <img src="./img/ayoola-salako-ixCWR36ON3I-unsplash 1.png" class="img-fluid ">
+          </div>
+          <div class="frame-circle">
+          <img src="./img/Frame 369.png" class="" width="100px">
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 about-section">
+          <p class="welcome-to-dizpose mt-3">Welcome to Dispoze waste management company....</p>
+          <h1>We’ve been working for the past 12yrs</h1>
+          <p class="mt-3 about-time">We have been in the business of handling household and industrial wastes for 12 years and 90% of our customers are satisfied and happy ones.</p>
+          <div class="row mt-5">
+            <div class="col-lg-6 d-flex align-items-center">
+              <img src="./img/Frame 157.png" class="img-fluid" width="45px">
+              <div>
+                <h4 class="ms-3">GOING ABOVE & BEYOND</h4>
+              </div>
+            </div>
+            <div class="col-lg-6  d-flex align-items-center ">
+              <img src="./img/Frame 158.png" class="img-fluid mt-2" width="45px">
+              <div>
+                <h4 class="ms-3">CONNECTED TO PEOPLE FIRST</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section4-homepage mt-3 py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="why-choose-us"><p>Why choose us....</p></div>
+          <h1>We’ll make sure your waste goes to the right places</h1>
+          <div class="ceo-info d-flex align-items-center mt-5 mb-3">
+            <div class="ceo-image">
+              <img src="./img/ceo-name.png" class="img-fluid me-4">
+            </div>
+            <div class="ceo-name">
+              <h5 class="mb-4">Eric Chinedu</h5>
+              <p>CEO- Co-Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="company-record d-flex align-items-center py-2 px-3 mb-3">
+            <div class="frame-image me-5">
+              <img src="./img/Frame 372.png" class="img-fluid" width="80px">
+            </div>
+            <div class="info">
+              <h5>4000+</h5>
+              <p>Waste picked and disposed</p>
+            </div>
+          </div>
+          <div class="company-record d-flex align-items-center py-2 px-3 mb-3">
+            <div class="frame-image me-5">
+              <img src="./img/Frame 371.png" class="img-fluid" width="80px">
+            </div>
+            <div class="info">
+              <h5>99%</h5>
+              <p>Our company is successful</p>
+            </div>
+          </div>
+          <div class="company-record d-flex align-items-center py-2 px-3">
+            <div class="frame-image me-5">
+              <img src="./img/Frame 370.png" class="img-fluid" width="80px">
+            </div>
+            <div class="info">
+              <h5>20000+</h5>
+              <p>Satisfied and happy customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section5-homepage text-center">
+    <div class="section5-title text-white">
+    <h1>MANAGE WASTE EFFECTIVELY</br> AND REDUCE ENVIRONMENTAL IMPACT</h1>
+    </div>
+    <div class="request-btns">
+      <a href="schedule-pickup.html" class=" btn-request-pickup text-white">Request A Pickup</a>
+      <a href="#footer" class="btn-contact-us text-white"> Contact Us</a>
+    </div>
+  </div>
+
+  <div class="section6-homepage">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-lg-7 col-md-7 col-12">
+          <h1 class="recent-project">RECENTLY COMPLETED PROJECTS</h1>
+        </div>
+        <div class="col-lg-5 col-md-5 col-12">
+          <p class="recent-project-text">Some of our recently completed projects includes; carry out cleanup, helping by drilling waters from flooded areas, e.t.c</p>
+        </div>
+
+      </div>
+      <div class="swiper mySwiper mt-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/refuse-1.png" class="img-fluid" >
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/refuse-2.png" class="img-fluid">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/refuse-3.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="section7-homepage my-3 pt-3 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-6">
+          <div class="feedback"><p>Our Customers Feedback...</p></div>
+          <div class="feedback-title">
+            <h1 class="mb-5">WHAT OUR CUSTOMERS ARE TALKING</h1>
+            <h4 class="mb-0">GREAT JOB AND FAIR PRICING</h4>
+            <img src="./img/Line 302.png" class="img-fluid" width="335px">
+          </div>
+          <div class="customer-feedback mt-2 fs-5">
+            <p>“The company has an awesome operation team. I commend them for a job well done. They are also very affordable.”</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center">
+          <div class="customer-image">
+            <img src="./img/customer.png" alt="customer-lady" class="img-fluid" width="350px">
+          </div>
+          <div class="customer-name mt-2">
+            <h4>JASMIN BROWN</h4>
+            <p>Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section8-homepage mb-3">
+    <div class="container">
+      <div class="segregation-guide"><p>
+        Segregation guide....
+      </p></div>
+      <h1>KNOW THE RIGHT BIN FOR YOUR WASTE</h1>
+      <div class="swiper mySwiper mt-5 text-center">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/sanitary wastes.png" alt="" class="img-fluid mb-3" width="200px">
+            <div class="sanitary-wastes align-middle">
+              <h4 class="mb-2">Sanitary wastes</h4>
+              <p>E.g used tissues,sanitary</br> towels,diapers,bandages etc</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/recyclable wastes.png" alt="" class="img-fluid mb-3" width="200px">
+            <div class="recyclable-wastes">
+              <h4 class="mb-2">Recyclable wastes</h4>
+              <p>E.g  Plastics, cardboards,</br> newspapers, woods etc</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/kitchen wastes.png" alt="" class="img-fluid mb-3" width="200px">
+            <div class="kitchen-wastes">
+              <h4 class="mb-2">Kitchen wastes</h4>
+              <p>E.g  leftovers, fruit/vegetable</br> peels, egg shells etc</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section9-homepage">
+  <div class="container text-center">
+    <div class="working-steps mt-5">
+      <p>4 Simple Steps....</p>
+      <h1>OUR WORKING PROCESS</h1>
+    </div>
+    <div class="row mt-4 mb-5 four-steps">
+      <div class="col-lg-3 col-md-6 mb-3">
+        <img src="./img/Frame 386.png" alt="A frame" class="img-fluid mb-2" width="150px">
+        <h3>SEGREGATE</h3>
+        <p>We pickup your waste at the inputed location and help keep the environment clean.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-3">
+        <img src="./img/Frame 387.png" alt="A frame" class="img-fluid mb-2" width="150px">
+        <h3>PICKUP</h3>
+        <p>After picking up the waste we arrange based on the types into batches.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-3">
+        <img src="./img/Frame 388.png" alt="A frame" class="img-fluid mb-2" width="150px">
+        <h3>PROCESSING</h3>
+        <p>After collection all batches are kept for processing before sent for dispose.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-3">
+        <img src="./img/Frame 389.png" alt="A frame" class="img-fluid mb-2" width="150px">
+        <h3>DISPOSE</h3>
+        <p>After undergoing the last three processes, the waste are then disposed.</p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+  <div class="section10-homepage">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 latest-news-section text-white shadow bg-body">
+          <div class="latest-news mt-5">
+          <p>What’s happening?....</p>
+          <h1 class="mb-4">OUR LATEST NEWS </br>AND ARTICLES</h1>
+          <p class="w-50 fs-5 the-news">Go through our news section to find out about our latest news and articles</p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="row news-cards">
+            <div class="col-lg-5 col-6">
+              <div class="card border-0">
+                <img src="./img/sigmund-aI4RJ--Mw4I-unsplash 1.png" alt="" class="img-fluid">
+                <h6 class="ms-2 mt-3">WASTE MANAGEMENT CONTAINERS / BINS FOR MY HOME</h6>
+              </div>
+            </div>
+            <div class="col-lg-5 col-6">
+              <div class="card border-0">
+                <img src="./img/the-blowup-t06aN6vewaQ-unsplash 1.png" alt="" class="img-fluid">
+                <h6 class="ms-2 mt-3">LEVERAGE AGILE FRAMEWORKS TO PROVIDE BEST SERVICES</h6>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer for registered users -->
+  <footer id="footer">
+    <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-md-12 mb-4 mb-lg-0"> 
+            <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Stay Connected</h6>
+            <p id="width" class="w-75 mb-4 width-md" style="font-weight: 400; font-size: 16px;">Subscribe to our newsletter to join over 1,500 persons who receive updates about our offers and changes in policy. You can unsubscribe anytime!</p>
+            <div class="input-group flex-column flex-md-row flex-lg-row w-75" id="width">
+                <input type="email" class="form-control mb-3 mb-md-0 mb-lg-0" placeholder="example@domain.com" aria-label="Recipient's email" aria-describedby="button-addon2" id="width">
+                <button class="btn py-0" style="font-weight: 400; font-size: 24px; background-color:  #17A200; color: #fff;" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12 ps-lg-5">
+            <div class="row">
+                <div class="col-12 col-md-6 ps-lg-5 pe-md-5">
+                    <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Quick Links</h6>
+                    <ul class="list-unstyled ps-1">
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="registered-user-homepage.html">Home</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Services</a>
+                        </li>
+                        <li class="mb-3"> 
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Recent Projects</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Request Pick Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 ps-lg-5 ps-md-5">
+                    <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/instagram 1.png" alt="logo" class="me-2">Instagram</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/twitter 1.png" alt="logo" class="me-2"> Twitter</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/linkedin 1.png" alt="logo" class="me-2"> LinkedIn</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/facebook 1.png" alt="logo" class="me-2"> Facebook</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="mailto:somebody@domain.com"><img src="img/mail 1.png" alt="logo" class="me-2"> Email</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/registered-user-homepage.js"></script>
+    <!-- Swiper JS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiperTop", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+
+}
+
+.credit-card-details p, span, .cash-payment-details p{
+    color: rgba(82, 82, 82, 1);
+}
+span{
+    font-size: 16px;
+}
+
+.payment-title h3{
+    font-size: 30px !important;
+}
+
+.payment-method{
+    font-size: 15px;
+}
+.credit-card-details, .cash-payment-details{
+    width: 80%;
+}
+
+.credit-card-details input, .cash-payment-details input{
+    width: 100%;
+    border: 1px solid black
+}
+.credit-card-details label, .cash-payment-details label{
+    font-size: 15px !important;
+}
+.terms-conditions p{
+    font-size: 15px !important;
+}
+
+.btn-pay{
+    width: 80%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    background: rgba(23, 161, 0, 1);
+    text-decoration: none;
+}
+
+input[type="radio"]{
+    accent-color: rgba(23, 161, 0, 1);
+    width: 1rem;
+    height:1rem;
+}
+
+.bank-transfer-method .btn-pay{
+    width: 80%;
+}
+
+.bank-transfer-method h5{
+    font-size: 17px;
+}
+.payment-image{
+    width: 150px;
+    margin: 0 auto;
+}
+.payment{
+    display: none;
+}
+.section2 p{
+    width: 70%;
+    margin: 0 auto;
+}
+.section2 .card{
+    min-height: 38vh;
+}
+.modal-content{
+    background: transparent !important;
+    border: 0 !important;
+}
+
+@media (max-width:769px){
+    
+    .payment-title h3{
+        font-size: 26px !important;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .section2 p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .credit-card-details,.cash-payment-details{
+        width: 100%;
+    }
+    
+    .credit-card-details label{
+        font-size: 16px !important;
+    }
+    
+    .btn-pay{
+        width: 100% !important;
+        text-align: center;
+    }
+    .payment-method label{
+        display: inline-block;
+        
+    }
+    .section1-payment-screen .card{
+        margin: 0 auto !important;
+    }   
+    .bank-transfer-method .btn-pay{
+        width: 100%;
+    }
+    }
+
+@media (max-width:426px){
+    
+.payment-title h3{
+    font-size: 22px !important;
+    text-align: center;
+    margin: 15px 0;
+}
+.credit-card-details{
+    width: 100%;
+}
+
+.credit-card-details label{
+    font-size: 15px !important;
+}
+
+.btn-pay{
+    width: 100%;
+    text-align: center;
+}
+.section2 p{
+    width: 70%;
+    margin: 0 auto;
+}
+#credit-card-method,#bank-transfer-method,#cash-payment-method{
+    float: right;
+}
+.payment-method label{
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.section1-payment-screen .card{
+    margin: 0 auto !important;
+}   
+}
+    
+

@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.bus-image-section {
+    min-height: 50vh;
+    min-width: 95vw;
+background: url(../img/pickup-van.png);
+background-repeat: no-repeat;
+background-size:cover;
+
+    }
+
+.shop {
+    border:1px solid #17A100;
+}
+
+.shop-border{
+    border-color : #17A100;
+    background-color: #17A100;
+    color: white;
+}
+
+.nav-link {
+color:black;
+}
+
+.cart-button {
+    font-size: 0.875rem;
+    
+}
+
+.center {
+    align-items: center;
+}
+
+.mx-auto {
+    display:flex;
+    justify-content:center;
+}
+.bord{
+    border: 1px solid red;
+}
+
+.spacing {
+    display:flex !important;
+    justify-content:center !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+.nav-arrow:hover{
+    background:#17A100 !important;
+    color: white !important;
+}
+
+.head-link .active {
+    background: #17A100 !important;
+    color:white !important;
+}
+
+.nav-arrow:focus{
+    background: #17A100 !important;
+    color:white !important;
+   
+}
+
+ul li a{
+    display:inline;
+    position: relative;
+}
+
+.head-link .active::after{
+    content:"" !important;
+    border-right: 10px solid transparent !important;
+    border-top: 10px solid #17A100 !important;
+    border-bottom: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+    width:0 !important;
+    height:0 !important;
+    position:absolute !important;
+    top: 53px !important;
+    bottom: -20px !important;
+    left:50% !important;
+    transform:translateY(-50%) !important;
+}
+
+.money {
+    color:#cB882A;
+    font-size: 1.25rem;
+}
+
+.radius-btn-1 {
+    border-radius: 7px 0px 0px 7px;
+}
+
+.radius-btn-3 {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.radius, .radius-btn {
+border-radius:7px;
+}
+
+.small-text{
+    color:#505050;
+    font-size: 1.125rem;
+}
+
+.text{
+    color:black;
+}
+
+.header-text {
+    font-size: 2.1875rem;
+}
+
+.big-text {
+    font-size: 1.5rem;
+}
+
+.cart {
+color:#17A100
+}
+
+.quantity{
+    width:100px;
+    margin-top:auto;
+    margin-bottom:35px;
+   margin-right:10px;
+}
+
+.quantity  .number {
+    border:none;
+    text-align:center !important;
+    margin-left:5px;
+    width:20px !important;
+    font-weight:bold;
+}
+
+.plus-btn {
+    font-weight:bold;
+}
+
+.my-button-b{
+    background-color:#17A100;
+    color: white;
+    font-size: 12px !important;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+.my-button-c{
+    border:#17A100 1px solid;
+    color: #17A100;
+    font-size: 12px !important;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.button-b-c {
+    display: flex;
+    justify-content:left;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 25px !important;
+}
+
+.button-b {
+    background-color:#17A100;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 45px !important ;
+    }
+
+    
+.plusBtn, .minusBtn {
+    border:none;
+    background-color: white;
+    
+   
+}
+
+.plus-btn, .minus-btn {
+    border: 1px solid black;
+    min-height:10px;
+    width:20px;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    border-radius:2.5px;
+    cursor:pointer;
+    background-color: white;
+    font-size:15px;
+}
+input:active, input:focus {
+    outline:none;
+}
+
+button:active, button:focus {
+    outline:none;
+}
+
+.text-decoration-none:hover {
+    color: black !important;
+}
+
+.my-button-b .text-decoration-none, .button-b .text-decoration-none {
+    color: white;
+}
+
+
+.my-button-c .text-decoration-none, .button-c .text-decoration-none {
+    color:#17A100;
+}
+
+
+
+
+@media (max-width:769px){
+    .top{
+        margin-top:40px ;
+    }
+
+       .quantity {
+        margin-left: 15px !important;
+    }
+
+    .bus-image-section {
+        min-width:10vw;
+    min-height: 32vh;
+    background-image: url(../img/pickup-van.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;        
+    }
+
+    .my-button-b {
+        margin-left: 5px !important;
+    }
+}
+
+
+    @media (max-width: 426px) {
+
+        .header-text {
+            font-size: 20px;
+        }
+
+        .big-text {
+            font-size: 18px;
+        }
+       
+        .small-text {
+            font-size: 16px;
+        }
+
+        .head-link .active::after{
+            content:"" !important;
+            border-right: 10px solid transparent !important;
+            border-top: 10px solid #17A100 !important;
+            border-bottom: 10px solid transparent !important;
+            border-left: 10px solid transparent !important;
+            width:0 !important;
+            height:0 !important;
+            position:absolute !important;
+            top: 50px !important;
+            bottom: -20px !important;
+            left:50% !important;
+            transform:translateY(-50%) !important;
+        }
+        .bus-image-section {
+            min-width:10vw !important;
+        min-height: 18vh !important;
+        background-image: url(../img/pickup-van.png);
+        background-repeat: no-repeat;
+        background-size:cover !important;
+        margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .my-button-c   {
+            width:52% !important;
+            font-size: 10px !important;
+        }
+        .my-button-b   {
+            width:45% !important;
+            font-size: 10px !important;
+        }
+    }
+          
+
+    
+    @media (max-width:413px) {
+        .bus-image-section {
+            min-width:10vw !important;
+        min-height: 11vh !important;
+        background-image: url(../img/pickup-van.png);
+        background-repeat: no-repeat;
+        background-size:cover !important;
+        margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .my-button-c   {
+            width:52% !important;
+            font-size: 9px !important;
+        }
+        .my-button-b   {
+            width:45% !important;
+            font-size: 9px !important;
+        }
+    }
+    @media (max-width: 394px) {
+        .my-button-c   {
+            width:52% !important;
+            font-size: 9px !important;
+        }
+        .my-button-b   {
+            width:45% !important;
+            font-size: 9px !important;
+        }
+    }
+
+
+
+    @media (max-width: 376px) {
+       
+        .bus-image-section {
+        min-width:10vw;
+        min-height: 15vh;
+        background-image: url(../img/pickup-van.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+       
+        .big-text {
+            font-size: 20px;
+        }
+         .my-button-c   {
+            padding: 5px !important;
+            width:52% !important;
+            font-size: 9px !important;
+        }
+        .my-button-b   {
+            padding: 5px !important;
+            width:45% !important;
+            font-size: 9px !important;
+        }
+        
+    }
+
+    @media (max-width: 361px) {
+        .my-button-c   {
+            width:44% !important;
+            font-size: 8px !important;
+        }
+        .my-button-b   {
+            width:36% !important;
+            font-size: 8px !important;
+        }
+    }
+
+    @media (max-width:361px){
+        .bus-image-section {
+            min-width:10vw;
+        min-height: 11vh;
+        background-image: url(../img/pickup-van.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+    }
+
+    @media (max-width: 321px) {
+        .bus-image-section {
+            min-width:10vw;
+        min-height: 13vh;
+        background-image: url(../img/pickup-van.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .my-button-c   {
+            padding: 4px !important;
+            width:55% !important;
+            font-size: 9px !important;
+        }
+        .my-button-b   {
+            padding: 4px !important;
+            width:41% !important;
+            font-size: 9px !important;
+        }
+             
+             .nav-item{
+            width:90px;
+        }
+
+        .small-text,.money  {
+            font-size:14px;
+        }
+
+        .head-link .active::after{
+            content:"" !important;
+            border-right: 10px solid transparent !important;
+            border-top: 10px solid #17A100 !important;
+            border-bottom: 10px solid transparent !important;
+            border-left: 10px solid transparent !important;
+            width:0 !important;
+            height:0 !important;
+            position:absolute !important;
+            top: 48px !important;
+            bottom: -20px !important;
+            left:50% !important;
+            transform:translateY(-50%) !important;
+        }
+                .big-text {
+        font-size:16px !important;
+        }
+        
+      
+        
+    }
+
+   
+   
+
+   
+
+  

@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter"  sans-serif;
+}
+
+.input-container{
+    width: 6%;
+    padding: 8px;
+}
+
+.input-container .form-control{
+    width: 100%;
+    font-size: 12px;
+}
+
+#validate-btn{
+    padding: 6px 100px;
+    background-color: #90ee90;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    margin-top: 35px;
+}
+
+.validation-text{
+    padding: 0 23.5rem;
+}
+
+.small-text{
+    font-size: 15px;
+}
+
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.bi-eye-slash{
+    font-size: 18px;
+}
+
+.reset-container .form-control{
+    width: 100%;
+    padding: 8px auto;
+}
+
+@media(max-width: 426px){
+    .wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bi-eye-slash{
+        font-size: 16px;
+    }
+
+    .spaced{
+        margin-bottom: 12px;
+    }
+
+    .input-container{
+        width: 10%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .validation-text{
+        padding: 0 2rem;
+    }
+
+}
+
+@media(min-width: 427px) and (max-width: 770px){
+    .wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bi-eye-slash{
+        font-size: 16px;
+    }
+
+    .spaced{
+        margin-bottom: 12px;
+    }
+    
+    .input-container{
+        width: 10%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .validation-text{
+        padding: 0 2rem;
+    }
+
+}
+
+@media(min-width: 771px) and (max-width: 1150px){
+    .validation-text{
+        padding: 0 10.5rem;
+    } 
+
+    .input-container{
+        width: 8%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1198px){
+    .validation-text{
+        padding: 0 10.5rem;
+    } 
+
+    .input-container{
+        width: 8%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+}
+
+@media(min-width: 1051px) and (max-width: 1198px){
+    .validation-text{
+        padding: 0 18.5rem;
+    } 
+
+    .input-container{
+        width: 6%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+}

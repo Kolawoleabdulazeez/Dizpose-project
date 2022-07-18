@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-title h1{
+    font-size: 64px;
+    letter-spacing: 0.6px;
+    line-height: 80px;
+    font-weight: 600;
+    position: relative;
+    z-index: 50;
+}
+.hero-title{
+    width: 135%;
+    margin:120px 0 5px 0 ;
+}
+.hero-title .green-title, .about-section .welcome-to-dizpose{
+    color:rgba(23, 161, 0, 1);
+}
+.about-time{
+    width: 80%;
+    font-size: 18px;
+}
+.hero-content{
+    width: 115%;
+}
+.hero-content p{
+    font-size: 24px;
+}
+.btn-pickup-request{
+    width: 35%;
+    background: rgba(23, 161, 0, 1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+.btn-pickup-request a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 1);
+}
+.service-title h4{
+    color: rgba(30, 214, 0, 1);
+}
+.section2-homepage .card{
+    min-height: 300px;
+}
+.card-content-trash{
+    width: 80%; 
+    margin: 0 auto;
+}
+.section2-homepage .card{
+    background: rgba(245, 228, 204, 1);
+}
+.card-content-trash h5{
+    color: rgba(56, 56, 56, 1);
+}
+.about-section h1{
+    font-size: 45px;
+    width: 80%;
+}
+.section3-homepage .frame-circle img{
+    position: relative;
+    top:-350px;
+    left: 25px;
+}
+.our-job .our-staff{
+    width: 70%;
+    margin: 0 auto;
+}
+.section4-homepage{
+    background: #FDFAF7;
+}
+.why-choose-us{
+    color: rgba(30, 214, 0, 1);
+}
+.section4-homepage h1{
+    font-size: 45px;
+    color:rgba(219, 160, 77, 1);
+}
+.ceo-name h5{
+  color:  rgba(158, 158, 158, 1);
+}
+
+.ceo-name p{
+    color: rgba(30, 214, 0, 1);
+    font-weight: 500;
+}
+
+.company-record{
+    background: rgba(255, 255, 255, 1);
+    width: 80%;
+}
+
+.info h5{
+    color: rgba(30, 214, 0, 1);
+}
+.info p{
+    font-size: 20px;
+}
+.recent-project-text{
+    width: 75%;
+    font-size: 19px !important;
+}
+
+.section5-homepage{
+    background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../img/waste-truck.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 65vh;
+}
+
+.section5-title{
+    padding: 110px 0 50px 0;
+}
+.request-btns{
+    margin-bottom: 150px;
+}
+.btn-request-pickup{
+    text-decoration: none;
+    background:rgba(30, 214, 0, 1);  
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.btn-contact-us{
+    background: rgba(219, 160, 77, 1);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.customer-name h4, .feedback, .working-steps p{
+    color: #1ED600;
+}
+.feedback-title h1{
+    width: 80%;
+    color:rgba(158, 158, 158, 1);
+}
+.segregation-guide{
+    color: rgba(30, 214, 0, 1);
+}
+.recent-project{
+    width: 80%;
+}
+.section10-homepage{
+    background: #FDFAF7;
+    min-height: 60vh;
+
+}
+.customer-feedback{
+    color: rgba(158, 158, 158, 1);
+    width: 60%;
+}
+.latest-news-section{
+    background:  linear-gradient(rgba(0, 0, 0, 0.2),rgba(29, 29, 29, 0.51)), url('../img/jason-dent-eB1ziPSixlQ-unsplash\ 1.png');
+    min-height: 60vh;
+}
+.latest-news .the-news{
+
+}
+.news-cards{
+    position: relative;
+    left: -100px;
+    top: 50px;
+    min-height: 50vh;
+}
+.news-cards h6{
+    font-weight: 600;
+}
+.news-cards .card{
+    min-height: 320px;
+}
+.four-steps p{
+    width: 100%;
+}
+.latest-news{
+    margin-left: 50px !important;
+}
+ @media (max-width:1025px){
+    .hero-title{
+        width: 135%;
+        margin:100px 0 5px 0 ;
+    }
+    .hero-title h1{
+        font-size: 53px !important;
+        line-height: normal;
+    }
+    .btn-pickup-request{
+        width: 40%;
+    }
+    .hero-content{
+        width: 125%;
+    }
+    .hero-content p{
+        font-size: 22px;
+    }
+    .section3-homepage .frame-circle img{
+        position: relative;
+        top:-350px;
+        left: 0;
+        width: 50px;
+    }
+    .our-job .our-staff{
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width:426px){
+    .hero-title{
+        width: 100%;
+        margin: 10px 0 3px 0;
+    }
+    .hero-title h1{
+        font-size: 28px !important;
+        line-height: normal;
+    }
+    .hero-content{
+        width: 100%;
+        font-size: 14px;
+    }
+    .hero-content p{
+        font-size:19px !important;
+    }
+    .about-section h1{
+        font-size: 20px;
+        width: 100%;
+    }
+    .section3-homepage .frame-circle img{
+       display: none;
+    }
+    .section4-homepage h1{
+        font-size: 20px;
+    }
+    .ceo-image img{
+        width: 100px;
+    }
+    .company-record{
+        width: 100%;
+    }
+    .about-time{
+        width:100%;
+        font-size: 18px;
+    }
+    .info p{
+        font-size: 16px;
+    }
+    .section5-title h1{
+        font-size: 20px !important;
+    }
+    .btn-pickup-request{
+        width: 100%;
+    }
+    .recent-project{
+        width: 100%;
+        font-size: 23px !important;
+    }
+    .recent-project-text{
+        width: 100%;
+    }
+    .feedback-title h1, .feedback-title h4{
+        width: 100%;
+        font-size: 24px;
+    }
+    .feedback-title h4{
+        font-size: 22px;
+    }
+    .feedback-title img{
+        width: 300px;
+    }
+    .customer-feedback{
+        width: 100%;
+    }
+
+    .customer-image img{
+        width: 200px;
+    }
+    .section8-homepage h1{
+        font-size: 24px;
+    }
+    .section9-homepage img{
+        width: 100px;
+    }
+    .four-steps p{
+        width: 60%;
+        margin: 3px auto;
+    }
+    .latest-news .the-news{
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+    .latest-news{
+        margin-left:3px !important ;
+    }
+    .news-cards{
+        position: static;
+        margin-top: 15px !important;
+    }
+}
+@media (max-width:769px){
+    .hero-title{
+        width: 100%;
+        margin: 10px 0 3px 0;
+    }
+    .hero-title h1{
+        font-size: 45px;
+        line-height: normal;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-content p{
+        font-size:24px;
+    }
+    .about-section h1{
+        font-size: 30px;
+    }
+    .about-time{
+        font-size: 17px !important;
+        width:100%;
+    }
+    .section4-homepage h1{
+        font-size: 30px;
+    }
+    .section3-homepage .frame-circle img{
+        position: relative;
+        top:-450px;
+        left: 0;
+        width: 100px;
+    }
+   
+    .customer-feedback{
+        width: 100%;
+    }
+    
+    .ceo-image img{
+        width: 150px;
+    }
+    .company-record{
+        width: 100%;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .section5-title h1{
+        font-size: 35px;
+    }
+    .btn-pickup-request{
+        width: 100%;
+    }
+    .recent-project{
+        width: 100%;
+        font-size: 36px;
+    }
+    .recent-project-text{
+        width: 100%;
+    }
+    .feedback-title h1, .feedback-title h4{
+        width: 100%;
+        font-size: 24px;
+    }
+    .feedback-title h4{
+        font-size: 22px;
+    }
+    .feedback-title img{
+        width: 300px;
+    }
+
+    .customer-image img{
+        width: 200px;
+    }
+    .section8-homepage h1{
+        font-size: 30px;
+    }
+    .section9-homepage img{
+        width: 100px;
+    }
+    .four-steps p{
+        width: 60%;
+        margin: 3px auto;
+    }
+    .latest-news .the-news{
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+    .latest-news{
+        margin-left:3px !important ;
+    }
+    .news-cards{
+        position: static;
+        margin-top: 15px !important;
+    }
+    .news-cards .card{
+        min-height: 250px;
+    }
+}

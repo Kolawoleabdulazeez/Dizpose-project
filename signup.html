@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header-footer-loggedin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title></title>
+
+<body>
+    <!-- header for non registered members -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" style="font-weight: 600; font-size: 30px;" href="#">Dispoze</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-4">
+                            <a class="text-decoration-none text-dark d-lg-none" style="font-weight: 400; font-size: 18px;"
+                                href="#">MENU</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link link-dark active" style="font-weight: 400; font-size: 18px;"
+                                aria-current="page" href="index.html"><img src="img/home.png" alt="icon"
+                                    class="me-4 d-lg-none">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="login.html"><img
+                                    src="img/shop.png" alt="icon" class="me-4 d-lg-none">Shop</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="about-us.html">
+                                <img src="img/people.png" alt="icon" class="me-4 d-lg-none">About US</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="#footer"><img
+                                    src="img/messages-3.png" alt="icon" class="me-4 d-lg-none">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" style="font-weight: 400; font-size: 18px; color:  #17A200;"
+                                href="login.html"><img src="img/login.png" alt="icon" class="me-4 d-lg-none">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded px-lg-3 py-1" id="sign-up"
+                                style="font-weight: 400; font-size: 18px; background-color:  #17A200;"
+                                href="signup.html"><img src="img/user-add.png" alt="icon" class="me-4 d-lg-none">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container main-section">
+        <div class="my-5">
+            <div class="text text-center fs-1">
+                <h1 class=""> Let’s Get to Know You!</h3>
+                    <p class="">Fill in your details to create an account.</p>
+            </div>
+        </div>
+        <div class="form mx-auto my-5 main-section">
+            <form class="mt-5">
+                <div class="container fw-light fs-6">
+                    <!-- surname and first name -->
+                    <div class="row">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 name mb-4">
+                            <label for="surname">Surname*</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Enter your surname"
+                                onkeyup="isFilled()">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                            <label for="firstname">Firstname*</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Enter your first name"
+                                onkeyup="isFilled()">
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="row ">
+                        <div class="mb-4">
+                            <label for="surname">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@domain.com"
+                                onkeyup="isFilled()">
+                        </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="row">
+                        <div class="col col-lg-6 col-md-12 col-sm-12 mb-4">
+                            <label for="phonenumber">Phone No*</label>
+                            <input type="text" class="form-control" id="phonenumber" placeholder="E.G. 08012345678"
+                                onkeyup="isFilled()">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                            <label for="phonenumber">Alternative Phone No. (Optional)</label>
+                            <input type="text" class="form-control" id="phonenumber" placeholder="E.G. 08012345678"
+                                onkeyup="isFilled()">
+                        </div>
+                    </div>
+
+                    <!-- password -->
+                    <div class="row">
+                        <div class=" col col-lg-6 col-md-12 col-sm-12 mb-3">
+                            <label for="password">Password*</label>
+                            <p class="d-flex align-items-center">
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Create a new password" onkeyup="isFilled()">
+                                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 mb-4">
+                            <label for="confirmpassword">Confirm Password*</label>
+                            <p class="d-flex align-items-center">
+                                <input type="password" class="form-control" id="repassword"
+                                    placeholder="Re-enter new password" onkeyup="isFilled()">
+                                <i class="bi bi-eye-slash hide" id="retogglePassword"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- foot notes -->
+                    <div class="req">
+                        <p>Password requirements:</p>
+                        <ul>
+                            <li>Must be at least 8 characters long.</li>
+                            <li>Must contain a special character.</li>
+                        </ul>
+                    </div>
+
+                    <!-- signup button -->
+                    <div class="d-grid gap-2 my-5">
+                        <button id="btn" class="btn btn-primary btn-outline-light btn-success dc" type="button"><a
+                                href="success.html">Sign Up</a></button>
+                    </div>
+
+                    <div class="my-auto d-flex login">
+                        <p>Already have an account?</p>
+                        <p class="text-success ms-2 f"><a href="login.html">Login</a></p>
+                    </div>
+                    <div class="d-flex continue align-items-center my-5">
+                        <div class="line"></div>
+                        <div>
+                            <p class="me-5 text-center mt-3">
+                                Or continue with
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="d-flex w-25 mx-auto justify-content-between my-4 socials">
+                        <img src="./img/Google - jpeg 0.png" alt="" class="w-25">
+                        <img src="./img/Facebook - png 0.png" class="w-25" alt="">
+                        <img src="./img/Apple - png 0.png" class="w-25" alt="">
+                    </div>
+
+                </div>
+            </form>
+    </section>
+
+    <!-- footer for registered users -->
+    <footer id="footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Stay Connected</h6>
+                    <p id="width" class="w-75 mb-4 width-md" style="font-weight: 400; font-size: 16px;">Subscribe to our
+                        newsletter to join over 1,500 persons who receive updates about our offers and changes in policy.
+                        You can unsubscribe anytime!</p>
+                    <div class="input-group flex-column flex-md-row flex-lg-row w-75" id="width">
+                        <input type="email" class="form-control mb-3 mb-md-0 mb-lg-0" placeholder="example@domain.com"
+                            aria-label="Recipient's email" aria-describedby="button-addon2" id="width">
+                        <button class="btn py-0"
+                            style="font-weight: 400; font-size: 24px; background-color:  #17A200; color: #fff;"
+                            type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12 ps-lg-5 pt-3 pt-md-2 pt-lg-0">
+                    <div class="row">
+                        <div class="col-12 col-md-6 ps-lg-2 pe-md-5">
+                            <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Quick Links</h6>
+                            <ul class="list-unstyled ps-1">
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;"
+                                        href="login.html">Services</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="login.html">Recent
+                                        Projects</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="login.html">Request
+                                        Pick Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 ps-lg-2 ps-md-5">
+                            <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Contact Us</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img
+                                            src="img/instagram 1.png" alt="logo" class="me-2">Instagram</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img
+                                            src="img/twitter 1.png" alt="logo" class="me-2"> Twitter</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img
+                                            src="img/linkedin 1.png" alt="logo" class="me-2"> LinkedIn</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img
+                                            src="img/facebook 1.png" alt="logo" class="me-2"> Facebook</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="text-decoration-none text-dark"
+                                        style="font-weight: 400; font-size: 16px; color: #383838;"
+                                        href="mailto:somebody@domain.com"><img src="img/mail 1.png" alt="logo" class="me-2">
+                                        Email</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

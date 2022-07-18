@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.product-description li{
+    font-size: 18px;
+}
+
+.add-box button, .add-box .number-wanted {
+    border: 1px solid #9E9E9E !important;
+}
+
+.checkout{
+    background: rgba(23, 161, 0, 1);
+}
+
+.remove{
+   color: rgba(255, 46, 46, 0.99);
+   cursor: pointer;
+}
+
+.product-title{
+    display: block;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.header-link.active {
+    color: #17A200 !important;
+    border-bottom: 5px solid #17A200 !important;
+}
+
+#not-btn:hover, #not-btn:focus {
+    border: 1px solid transparent !important;
+}
+
+.dropdown-item:hover {
+    background: transparent !important;
+}
+
+footer {
+    background: url(../img/background_3.jpg) center/cover no-repeat;
+}
+
+.container-tab {
+    border: 1px solid lightgrey !important;
+    border-radius: 0px !important;
+}
+
+.container-tab.active {
+    background: transparent !important;
+    border: 1px solid #17A200 !important;
+}
+
+.btn-outline-success:hover {
+    background: transparent !important;
+}
+
+.add-box button, .add-box .number-wanted {
+    border: 1px solid #9E9E9E !important;
+}
+
+.color-tab {
+    position: relative;
+    top: -100px;
+}
+
+#not-btn {
+    position: relative;
+}
+
+.notification-counter {
+    width: 23%;
+    min-height: 1.5vh;
+    border-radius: 50%;
+    background: red;
+    color: #ffff;
+    font-size: 10px;
+    position: absolute;
+    top: 0px;
+    right: 16px;
+}
+
+@media (max-width: 1025px) {
+    .product-description {
+        width: 100% !important;
+    }
+
+    .add-box {
+        width: 50% !important;
+    }
+
+    .add-cart {
+        width: 100% !important;
+    }
+
+    .notification-counter {
+        width: 20%;
+        min-height: 3vh;
+    }
+    
+}
+
+@media (max-width: 769px) {
+    .nav-link {
+        color: black;
+    }
+
+    .header-link.active {
+        border-bottom: none !important;
+    }
+
+    .width-md {
+        width: 100% !important;
+    }
+
+    .color-tab {
+        position: static;
+    }
+
+    .add-cart {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+
+    .add-box{
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+    }
+
+    .notification-counter {
+        width: 8%;
+        top: 5px;
+        left: 12px;
+    }
+}
+
+@media (max-width: 426px) {
+    #width {
+        width: 100% !important;
+    }
+
+    .input-group .form-control, .input-group button{
+        border-radius: 7px!important;
+    }
+
+    .add-box {
+        width: 50%!important;
+    }
+}
+
+
+
+

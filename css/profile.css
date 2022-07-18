@@ -1,0 +1,469 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+
+/* header, footer {
+    font-family: 'Inter', sans-serif !important;
+} */
+
+.nv-link:hover {
+    color: #17A200 !important;
+    border-bottom: 4px solid #17A200 !important;
+}
+
+.nv-lin:hover, footer a:hover {
+    text-decoration: underline !important;
+}
+
+footer {
+    background: url(../img/background_3.jpg) center/cover no-repeat;
+}
+
+#width {
+    width: 60% !important;
+}
+
+#nav-toggler {
+    /* position: absolute; */
+    left: 0%;
+    top: -37%;
+    border: none !important;
+}
+
+
+
+#hero .outskirt {
+    padding: 70px 70px;
+}
+
+#hero .first, #hero .secnd {
+    width: 46%;
+}
+
+/* label {
+    color: #000000;
+} */
+
+input[type= text], input[type= email], input[type= number], input[type="password"] {
+    border-radius: 10px;
+}
+
+.text-section {
+    margin-bottom: 50px;
+}
+.btn-section {
+    background: #17A200;
+    opacity: 0.5;
+    border-radius: 7px;
+    width: 80%;
+    margin: auto;
+}
+.btn-sectionII {
+    background: #17A100;
+    border-radius: 7px;
+    width: 98%;
+    margin: auto;
+}
+
+.secnd-img {
+    bottom: 5%;
+    left: 75%;
+}
+/* .btn-sectionIII {
+    background: #18a20083;
+    background: #19A200;
+    opacity: 0.5;
+    border-radius: 7px;
+    width: 99%;
+    margin: auto;
+} */
+
+/* .secnd-img {
+    bottom: 5%;
+    left: 75%;
+} */
+
+/* #login .login-form {
+    width: 55%;
+} */
+
+/* #login .text-area {
+    margin: 80px 0;
+} */
+
+/* #login a:hover {
+    text-decoration: underline !important;
+} */
+
+
+
+
+ 
+/* .line-box {
+    position: relative;
+    width: 60%;
+    height: 20px;
+    margin: auto;
+} */
+
+/* .line {
+    width: 100%;
+    position: absolute;
+    z-index: -50;
+} */
+
+/* .text {
+    width: 30%;
+    height: 20px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    z-index: 50;
+} */
+
+
+/* #login .view {
+    bottom: 12%;
+    right: 0;
+} */
+
+
+/* #login .account {
+    margin-bottom: 80px;
+} */
+
+/* #login .line-box {
+    margin-bottom: 40px;
+} */
+
+
+/* #show {
+    display: none;
+} */
+
+/* .view-eye {
+    display: block !important;
+} */
+
+/* .hide-eye {
+    display: none !important;
+} */
+
+/* .view:focus {
+    box-shadow: none !important;
+} */
+
+
+
+
+
+@media (max-width: 426px) {
+
+    #width {
+        width: 100% !important;
+    }
+
+    .input-group .form-control, .input-group #button-addon2  {
+        border-radius: 7px !important;
+    }
+
+
+
+    /* .nav-link {
+        color: black !important;
+    } */
+
+    /* .nav-link .active {
+        border-bottom: none !important;
+    } */
+
+    /* #sign-up {
+        background-color: transparent !important;
+    } */
+
+    header .nav-item .nav-link:focus {
+        color: #17A200 !important;
+    }
+
+
+
+
+
+
+    /* .nv-link:hover {
+        color: #17A200 !important;
+        border-bottom: 4px solid #17A200 !important;
+    }
+
+    .item:hover {
+        color: #17A100 !important;
+    } */
+
+
+    #hero .outskirt {
+        padding: 0;
+        /* margin: 0 !important; */
+    }
+
+    .image-section {
+        width: 100%;
+        margin: auto;
+    }
+
+    .image-section .first-img {
+        width: 50%;
+        text-align: center !important;
+        margin: auto !important;
+    }
+
+    .image-section .secnd-img {
+        width: 10%;
+        bottom: 5%;
+        left: 65%;
+    }
+
+    #hero .first, #hero .secnd {
+        width: 100%;
+    }
+
+    .btn-section, .btn-sectionII {
+        width: 50%;
+        margin-bottom: 150px !important;
+    }
+
+    .contact {
+        margin-top: 20px !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 20px !important;
+    }
+
+    .marg-btm {
+        margin-bottom: 50px;
+    }
+
+    #width {
+        width: 100% !important;
+    }
+
+    .input-group .form-control, .input-group #button-addon2  {
+        border-radius: 7px !important;
+    }
+
+    .navbar a {
+        font-size: 30px !important;
+    }
+
+    /* #login .text-area p {
+        font-size: 13px;
+    } */
+
+    /* #login .login-form {
+        width: 100%;
+    } */
+
+    /* .line-box {
+        width: 100%;
+    } */
+    
+    /* .text {
+        width: 40%;
+    } */
+
+    /* .line-box p {
+        font-size: 13px;
+    } */
+}
+
+
+
+@media (min-width: 427px) and (max-width: 800px) {
+
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .nav-link.active {
+        border-bottom: none !important;
+    }
+
+    #sign-up {
+        background-color: transparent !important;
+    }
+
+    .width-md {
+        width: 100% !important;
+    }
+
+
+
+    #hero .outskirt {
+        padding: 0;
+        /* margin: 0 !important; */
+    }
+
+    .image-section {
+        width: 100%;
+        margin: auto;
+    }
+
+    .image-section .first-img {
+        width: 40%;
+        text-align: center !important;
+        margin: auto !important;
+    }
+
+    .image-section .secnd-img {
+        width: 8%;
+        bottom: 5%;
+        left: 60%;
+    }
+
+    /* #hero .first, #hero .secnd {
+        width: 100%;
+    } */
+
+    .btn-section, .btn-sectionII {
+        width: 50%;
+        margin-bottom: 150px !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 20px !important;
+    }
+
+    .marg-btm {
+        margin-bottom: 50px;
+    }
+
+    header, #hero {
+        padding: 0 50px;
+    }
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .nav-link.active {
+        border-bottom: none !important;
+    }
+
+    /* #sign-up {
+        background-color: transparent !important;
+    } */
+
+    .width-md {
+        width: 100% !important;
+    }
+
+    /* #login .login-form {
+        width: 70%;
+    } */
+
+    /* .line-box {
+        width: 70%;
+    } */
+
+    /* .text {
+        width: 45%;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
+
+
+
+
+
+
+/* footer background */
+/* .last {
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(141, 240, 121, 0.056); 
+    position: relative;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.sidefade1 {
+    position: absolute;
+    width: 10%;
+    height: 10vh;
+    background-color: rgba(141, 240, 121, 0.1); 
+    border-radius: 50%;
+    right: -1%;
+    top: -6%;
+    box-shadow: 2px 25px 25px 55px rgba(141, 240, 121, 0.1);
+    z-index: -5;
+}
+
+.sidefade2 {
+    position: absolute;
+    width: 10%;
+    height: 10vh;
+    background-color: rgba(141, 240, 121, 0.1);
+    border-radius: 50%;
+    left: -1%;
+    bottom: -6%;
+    box-shadow: 2px 25px 25px 55px rgba(141, 240, 121, 0.1);
+    z-index: -5;
+}
+
+.sidefade3 {
+    position: absolute;
+    width: 10%;
+    height: 10vh;
+    background-color: rgba(141, 240, 121, 0.1);
+    border-radius: 50%;
+    left: 15%;
+    top: -2%;
+    box-shadow: 2px 25px 25px 55px rgba(141, 240, 121, 0.1);
+    z-index: -5;
+}
+
+.sidefade4 {
+    position: absolute;
+    width: 10%;
+    height: 10vh;
+    background-color: rgba(141, 240, 121, 0.1);
+    border-radius: 50%;
+    right: 15%;
+    bottom: -2%;
+    box-shadow: 2px 25px 25px 55px rgba(141, 240, 121, 0.1);
+    z-index: -5;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+} */

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/cart-screen.css">
+    <link rel="stylesheet" href="css/header-footer-loggedin.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afc0882490.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- header for registered users -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" style="font-weight: 600; font-size: 30px;" href="#">Dispoze</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="text-decoration-none text-dark d-lg-none" style="font-weight: 400; font-size: 18px;" href="#">MENU</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" aria-current="page" href="registered-user-homepage.html"><img src="img/home.png" alt="icon" class="me-4 d-lg-none">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="shop.html"><img src="img/shop.png" alt="icon" class="me-4 d-lg-none">Shop</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="about-us-loggedin.html"> <img src="img/people.png" alt="icon" class="me-4 d-lg-none">About Us</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link link-dark" style="font-weight: 400; font-size: 18px;" href="#footer"><img src="img/messages-3.png" alt="icon" class="me-4 d-lg-none">Contact Us</a>
+              </li>     
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mt-1">
+                    <button type="button" class="btn btn-outline-white px-0 px-lg-3 py-0" id="not-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="img/blanknotification.png" alt="logo"><span class="d-lg-none ps-1 ms-3" style="font-weight: 400; font-size: 18px;">Notifications</span>
+                        <div class="notification-counter">3</div>
+                    </button>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/profile-circle.png" alt="icon">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px;" href="profile.html"><img src="img/profile-circle.png" alt="icon" class="me-3">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" style="font-weight: 400; font-size: 18px; color :#FA0000;" href="login.html"><img src="img/logout.png" alt="icon" class="me-3">Sign-Out</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mb-1 d-lg-none">
+                    <a class="nav-link link-dark" href="profile.html"><img src="img/profile-circle.png" alt="icon"><span class="d-lg-none ps-4" style="font-weight: 400; font-size: 18px;">Profile</span></a>
+                </li>
+                <li class="nav-item mb-1 d-lg-none">
+                    <a class="nav-link" href="login.html" style="font-weight: 400; font-size: 18px; color :#FA0000;"><img src="img/logout.png" alt="icon" class="pe-4">Sign-Out</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+</header>
+
+<!-- modal notification -->
+<div class="the-notfication">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content px-4" style="background: white !important;">
+        <div class="modal-header flex-column">
+            <button type="button" class="btn-close align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="staticBackdropLabel" style="font-weight: 600; font-size: 25px;">Notifications<span class="unread-notification">(3)</span></h5>
+        </div>
+        <div class="modal-body mt-3">
+          <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background: rgba(255, 238, 238, 0.99); color: rgba(199, 0, 0, 0.99);">
+            <div class="me-5"><i class="bi bi-info-circle"></i></div>
+            <div class="me-5">
+                <h6>Notice of unavailability.</h6>
+                <p>Hello, kindly be informed that our pick up service will be unavailable from Monday, 15th of May to Friday, 4th of June, 2022. This is due to the movement restrictions put in place by the federal government to curtail the spread of the COVID-19 pandemic. We will be back to serve you better as soon as the restriction is suspended. Stay safe!😷</p>
+            </div>
+            <div><i class="bi bi-x"></i></div>
+          </div>
+          <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #EBFFE8; color: #17A200;">
+            <div class="me-5"><i class="bi bi-info-circle"></i></div>
+            <div class="me-5">
+                <h6>Happy New Year!</h6>
+                <p>Happy New Year from us at Dispoze! We wish you all the good things this year has to offer.🎉🎈</p>
+            </div>
+            <div><i class="bi bi-x"></i></div>
+          </div>
+          <div class="message-box p-3 mb-3 d-flex justify-contents-evenly" style="background:  #FFF4E3; color: #A16C21;">
+            <div class="me-5"><i class="bi bi-info-circle"></i></div>
+            <div class="me-5">
+                <h6>New items available to shop</h6>
+                <p>Hello, we have new collections of waste disposal materials you’d definitely love. kindly check the “Shop” section to cop yours!</p>
+            </div>
+            <div><i class="bi bi-x"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<div class="section1 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 sales-details-picture">
+                      <h3 class="d-lg-none d-xl-block d-xl-none text-center mt-3 mb-4 product-title" style="font-weight: 600; font-size: 25px;">Plastic Waste Bin</h3>
+                               <figure class="w-75 ms-md-5 text-center mx-auto">
+                                <img src="img/pink-bin-big.png" alt="a plastic bin" width="70%">
+                                <h3 class="d-none d-lg-block mt-3 mb-2 product-title" style="font-weight: 600; font-size: 25px;">Plastic Waste Bin</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                <figcaption class="pt-1" style="font-weight: 400; font-size: 22px; color: #CB882A;">₦14,999</figcaption>
+                                <div class="remove">Remove</div>
+                            </div>
+                               </figure>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 sales-details">
+                            <div>
+                              <h5 class="pb-3" style="font-weight: 600; font-size: 19px; color: #383838;">Brand new plastic waste bin</h5>
+                              <ul class="product-description list-unstyled" style="font-weight: 400; font-size: 19px; color: #1F1F1F;">
+                                  <li class="pb-3">Dimension: H1080xW595xD760mm.<br>240 Litre capacity. <br>Holds: 4,500Ibs</li>
+                                  <li class="pb-3 w-75">Best Use: Industrial/Commercial Waste</li>
+                                  <li class="pb-3 w-75">Quality strength and long service life features even under challenging climate condition</li>
+                                  <li class="pb-3 w-75">Manufactured from new virgin materials only</li>
+                              </ul>
+                              <div class="add-box d-flex justify-contents-center fs-3 mx-auto w-50" style="color: #9E9E9E;">
+                                  <button class="minus w-25" style="background: transparent; color: #9E9E9E;">-</button>
+                                  <div class="number-wanted text-center w-50">1</div>
+                                  <button class="plus w-25" style="background: transparent; color: #9E9E9E;">+</button>
+                              </div>
+                            </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-lg-4">
+             <div class="container">
+                <div class="card mt-5 px-3 py-4 shadow border-0">
+                    <h5 class="fw-bold mb-4">Cart Summary</h5>
+                    <div class="row">
+                        <div class="shoppings mb-3">
+                        <div class="row">
+                        <div class="col-lg-6 col-md-6 col-6"><p>Plastic Waste Bin</p></div>
+                        <div class="col-lg-6 col-md-6 col-6" style="color: #CB882A;"><p>₦ 14,999</p></div>
+                    </div>
+                    </div>
+                        <img src="./img/Line 339.png" class="img-fluid mx-auto mb-2" width="80%">
+                        <div class="col-lg-6 col-md-6 col-6"><p>TOTAL</p></div>
+                        <div class="shopping-cost col-lg-6 col-md-6 col-6 " style="color: #CB882A;"><p>₦ 14,999</p></div>
+                    </div>
+                    <a href="cart-payment-screen.html" class="text-decoration-none text-white text-center rounded-1 checkout py-2">Checkout<div class="checkout-value d-inline me-2"> (₦14,999)</div><i class="bi bi-check-circle"></i> </a>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- footer for registered users -->
+  <footer id="footer">
+    <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-md-12 mb-4 mb-lg-0"> 
+            <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Stay Connected</h6>
+            <p id="width" class="w-75 mb-4 width-md" style="font-weight: 400; font-size: 16px;">Subscribe to our newsletter to join over 1,500 persons who receive updates about our offers and changes in policy. You can unsubscribe anytime!</p>
+            <div class="input-group flex-column flex-md-row flex-lg-row w-75" id="width">
+                <input type="email" class="form-control mb-3 mb-md-0 mb-lg-0" placeholder="example@domain.com" aria-label="Recipient's email" aria-describedby="button-addon2" id="width">
+                <button class="btn py-0" style="font-weight: 400; font-size: 24px; background-color:  #17A200; color: #fff;" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12 ps-lg-5">
+            <div class="row">
+                <div class="col-12 col-md-6 ps-lg-5 pe-md-5">
+                    <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Quick Links</h6>
+                    <ul class="list-unstyled ps-1">
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="registered-user-homepage.html">Home</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Services</a>
+                        </li>
+                        <li class="mb-3"> 
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Recent Projects</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#">Request Pick Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 ps-lg-5 ps-md-5">
+                    <h6 class="mb-4" style="font-weight: 600; font-size: 18px; color: #1F1F1F;">Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/instagram 1.png" alt="logo" class="me-2">Instagram</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/twitter 1.png" alt="logo" class="me-2"> Twitter</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/linkedin 1.png" alt="logo" class="me-2"> LinkedIn</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="#"><img src="img/facebook 1.png" alt="logo" class="me-2"> Facebook</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none text-dark" style="font-weight: 400; font-size: 16px; color: #383838;" href="mailto:somebody@domain.com"><img src="img/mail 1.png" alt="logo" class="me-2"> Email</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="js/bootstrap.min.js"></script>
+<script src="js/cart-screen.js"></script>
+  
+</body>
+</html>
