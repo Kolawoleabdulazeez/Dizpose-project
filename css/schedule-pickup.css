@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+    font-family: 'Inter', sans-serif
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+header,
+footer {
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+.header h1 {
+    font-weight: 600;
+    font-size: 48px !important;
+    line-height: 72px;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 30px;
+}
+
+.title h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.line {
+    width: 65%;
+    height: 1px;
+    background: #e6e6e6;
+    margin: 1% auto;
+}
+
+.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-self: center;
+}
+
+.item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    align-self: center;
+}
+
+.main-section {
+    width: 60%;
+}
+
+.main-container {
+    margin: 4% auto;
+    width: 50%;
+}
+
+.accept {
+    background-color: rgb(23, 161, 0) !important;
+    border: none;
+    color: white;
+}
+
+.schedulebtn {
+    background-color: rgb(23, 161, 0, 0.5) !important;
+    border: none;
+}
+
+.edit {
+    background-color: white !important;
+    border: 2px solid rgb(23, 161, 0, 0.5) !important;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.edit a,
+.edit-confirm a {
+    color: rgb(23, 161, 0);
+}
+
+.edit a,
+.edit-confirm a {
+    color: rgb(23, 161, 0);
+}
+
+.btn-confirm {
+    color: white !important;
+    text-decoration: none;
+    background-color: rgb(23, 161, 0) !important;
+}
+
+.edit-confirm {
+    color: rgb(23, 161, 0, 0.5);
+    background-color: white !important;
+    border: 2px solid rgb(23, 161, 0, 0.5) !important;
+}
+
+.description {
+    color: #9E9E9E;
+}
+
+@media(max-width: 1025px) {
+    .description,
+    .item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%
+    }
+        .title h2{
+            font-size: 35px !important;
+        }
+    .main-container {
+        width: 60%;
+    }
+}
+
+@media(max-width: 769px) {
+    .description,
+    .item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%
+    }
+    .title h2{
+        font-size: 38px;
+    }
+    .line{
+        width: 80%;
+    }
+}
+
+@media(max-width: 426px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 70%;
+    }
+    .line{
+        width: 100%;
+    }
+    .header h2{
+        font-size: 30px!important;
+        font-weight: regular;
+        line-height: 36px;
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .schedule h1 {
+        font-size: 36px !important;
+        line-height: 48px !important;
+    }
+
+    .schedule p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    /* .btn {
+        width: none !important;
+    } */
+}
+@media(max-width: 376px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 80%;
+    }
+    .line{
+        width: 90%;
+    }
+}
+@media(max-width: 321px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 80%;
+    }
+    .line{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 25px!important;
+        font-weight: regular;
+        line-height: 36px;
+    }
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+    font-family: 'Inter', sans-serif
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+header,
+footer {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.holder{
+    color: #5e5151;
+}
+.header h1 {
+    font-weight: 600;
+    font-size: 48px !important;
+    line-height: 72px;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 30px;
+}
+
+.title h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.line {
+    width: 65%;
+    height: 1px;
+    background: #e6e6e6;
+    margin: 1% auto;
+}
+
+.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    align-self: center;
+}
+
+.item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    align-self: center;
+}
+
+.main-section {
+    width: 60%;
+}
+
+.main-container {
+    margin: 4% auto;
+    width: 50%;
+}
+
+.accept {
+    background-color: rgb(23, 161, 0) !important;
+    border: none;
+    color: white;
+}
+
+.btn {
+    background-color: rgb(23, 161, 0, 0.5) !important;
+    border: none;
+}
+
+.edit {
+    background-color: white !important;
+    border: 2px solid rgb(23, 161, 0, 0.5) !important;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.edit a,
+.edit-confirm a {
+    color: rgb(23, 161, 0);
+}
+
+.edit a,
+.edit-confirm a {
+    color: rgb(23, 161, 0);
+}
+
+.btn-confirm {
+    color: white !important;
+    text-decoration: none;
+    background-color: rgb(23, 161, 0) !important;
+}
+
+.edit-confirm {
+    color: rgb(23, 161, 0, 0.5);
+    background-color: white !important;
+    border: 2px solid rgb(23, 161, 0, 0.5) !important;
+}
+
+.description {
+    color: #9E9E9E;
+}
+
+@media(max-width: 1025px) {
+    .description,
+    .item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%
+    }
+        .title h2{
+            font-size: 45px !important;
+        }
+    .main-container {
+        width: 60%;
+    }
+}
+
+@media(max-width: 769px) {
+    .description,
+    .item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%
+    }
+    .title h2{
+        font-size: 48px;
+    }
+    .line{
+        width: 80%;
+    }
+}
+
+@media(max-width: 426px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 70%;
+    }
+    .line{
+        width: 100%;
+    }
+    .header h2{
+        font-size: 30px!important;
+        font-weight: regular;
+        line-height: 36px;
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .schedule h1 {
+        font-size: 36px !important;
+        line-height: 48px !important;
+    }
+
+    .schedule p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .btn {
+        width: 0% !important;
+    }
+
+}
+@media(max-width: 376px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 80%;
+    }
+    .line{
+        width: 90%;
+    }
+}
+@media(max-width: 321px) {
+    .main-section {
+        width: 95%;
+    }
+    .main-container{
+        width: 80%;
+    }
+    .line{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 25px!important;
+        font-weight: regular;
+        line-height: 36px;
+    }
+} */
